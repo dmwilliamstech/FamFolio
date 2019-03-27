@@ -1,0 +1,56 @@
+{
+  "profiles": [
+    {
+      "firstname": "David",
+      "lastname": "Williams",
+      "bio":
+        "Placeholder.",
+      "tagline": "Husband, Father, techy, developer, entrepreneur",
+      "info": "/resume",
+      "imgSrc": "hero_1.jpg",
+      "id": "pooh",
+      "site": "/resume"
+    },
+    {
+      "firstname": "Dana",
+      "lastname": "Williams",
+      "bio":
+        "Has strong opinions about anything you ever thought.",
+      "tagline": "Wife, Mother, other things",
+      "site": "/critique",
+      "imgSrc": "Baby-DR.jpg",
+      "id": "baby"
+    },
+
+    {
+      "firstname": "Elijah",
+      "lastname": "Williams",
+      "bio":
+        "Placeholder.",
+      "tagline": "Son, brother, athlete, musician, producer",
+      "site": "/beats",
+      "imgSrc": "Elijah-school.jpg",
+      "id": "elijah"
+    },
+    {
+      "firstname": "Kalyn",
+      "lastname": "Williams",
+      "bio":
+        "Placeholder.",
+      "tagline": "Daughter, Sister, competitor, princess, super-heroine",
+      "site": "/kkrafts",
+      "imgSrc": "kay-hr.jpg",
+      "id": "kay"
+    },
+    {
+      "firstname": "Jovan",
+      "lastname": "Jackson",
+      "bio":
+        "Placeholder.",
+      "tagline": "Son, Brother, artist, gamer, lil ugly dude",
+      "site": "/artwork",
+      "imgSrc": "Jo-bowl.jpg",
+      "id": "phats"
+    }  
+  ]
+}

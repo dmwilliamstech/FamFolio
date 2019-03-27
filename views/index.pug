@@ -1,0 +1,213 @@
+doctype html
+html
+head
+  title #{title}
+  link(rel='stylesheet', href='css/strategy/css/style.css')
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+head
+meta(charset='utf-8')
+meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+title FamFolio &mdash; This is a little site for our fam, Enjoy!
+link(rel='stylesheet' href='css/strategy/css/bootstrap.min.css')
+link(rel='stylesheet' href='css/strategy/css/aos.min.css')
+link(rel='stylesheet' href='css/strategy/css/hamburgers/hamburgers.min.css')
+link(rel='stylesheet' href='css/strategy/css/owl.carousel.min.css')
+link(rel='stylesheet' href='font/strategy/fonts/icomoon/style.css')
+link(rel='stylesheet' href='css/strategy/css/animsition.min.css')
+link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous')
+link(rel='stylesheet' href='css/strategy/css/style.css')
+.js-animsition.animsition(data-animsition-in-class='fade-in' data-animsition-out-class='fade-out')
+header.templateux-navbar(data-aos='fade-down')
+  .container-fluid
+    .row
+      .col-sm-3.col-3
+        .site-logo
+          a.animsition-link(href='/') FamFolio
+      .col-sm-9.col-9.text-right
+        button.hamburger.hamburger--spin.toggle-menu.ml-auto.js-toggle-menu(type='button')
+          span.hamburger-box
+            span.hamburger-inner
+        nav.templateux-menu.js-templateux-menu(role='navigation')
+          ul.list-unstyled
+            li.d-md-none.d-block.active
+              a.animsition-link(href='index.html') Home
+            li
+              a.animsition-link(href='/resume') David's Resume
+            li
+              a.animsition-link(href='/critique') Dana's Endeavors
+            li
+              a.animsition-link(href='/artwork') Jovans Artwork
+            li
+              a.animsition-link(href='/kkrafts') Kalyn's Krafts
+            li
+              a.animsition-link(href='/beats') Elijah's beats
+
+section.templateux-hero
+  .container
+    .row.align-items-center.justify-content-center.intro
+      .col-md-10(data-aos='fade-up')
+        h1 We are a family of many talents and here is our journey.
+        a.go-down.js-smoothscroll(href='#next')
+
+
+
+section#next.templateux-portfolio-overlap
+  .container-fluid
+    .row
+      each person in people
+        .col-md-6(data-aos='fade-up', data-aos-delay='100')
+          a.project.animsition-link(href=`${person.site}`)
+            figure
+              img.img-fluid(src=`images/${person.imgSrc}`, alt='Free Template')
+            .project-hover
+              .project-hover-inner
+                h2 #{person.firstname}
+                span #{person.tagline}
+
+
+
+
+
+
+section.templateux-section
+  .container
+    .row.justify-content-center
+      .col-md-4(data-aos='fade-up')
+        h2.section-heading.mt-3 What We Do
+      .col-md-8(data-aos='fade-up', data-aos-delay='100')
+        .row
+          .col-md-12
+            h2.mb-5
+              | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+
+
+
+
+      .row.clearfix
+        .col-lg-6
+          .media.templateux-media.mb-4
+            .mr-4.icon
+              span.i.far.fa-file-code.display-3
+            .media-body
+              h3.h5 Web & App development
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        .col-lg-6
+          .media.templateux-media.mb-4
+            .mr-4.icon
+              span.i.fas.fa-fist-raised.display-3
+            .media-body
+              h3.h5 Natural Hair care
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        .col-lg-6
+          .media.templateux-media.mb-4
+            .mr-4.icon
+              span.i.fas.fa-utensils.display-3
+            .media-body
+              h3.h5 Cooking
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        .col-lg-6
+          .media.templateux-media.mb-4
+            .mr-4.icon
+              span.i.fas.fa-music.display-3
+            .media-body
+              h3.h5 Music
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        .col-lg-6
+          .media.templateux-media.mb-4
+            .mr-4.icon
+              span.i.fas.fa-paint-brush.display-3
+            .media-body
+              h3.h5 Arts & Krafts
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        .col-lg-6
+          .media.templateux-media.mb-4
+            .mr-4.icon
+              span.i.fas.fa-user-secret.display-3
+            .media-body
+              h3.h5 Anime
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+
+
+
+
+
+
+
+section.templateux-section.mb-5
+.container
+  .row.justify-content-center
+    .col-md-4(data-aos='fade-up')
+      h2.section-heading.mt-3 Recent Activities
+    .col-md-8
+      .row
+        .col-lg-12
+          a.post.animsition-link(href='blog-single.html', data-aos='fade-up', data-aos-delay='100')
+            figure
+              img.img-fluid(src='images/img_1.jpg', alt='Free Template')
+            .post-hover
+              .post-hover-inner
+                h2 Placeholder
+                span Date placeholder
+      .row
+        .col-lg-6
+          a.post.animsition-link(href='blog-single.html', data-aos='fade-up', data-aos-delay='200')
+            figure
+              img.img-fluid(src='images/img_4.jpg', alt='Free Template')
+            .post-hover
+              .post-hover-inner
+                h2 Placeholder
+                span Date placeholder
+        .col-lg-6
+          a.post.animsition-link(href='blog-single.html', data-aos='fade-up', data-aos-delay='300')
+            figure
+              img.img-fluid(src='images/img_5.jpg', alt='Free Template')
+            .post-hover
+              .post-hover-inner
+               h2 Placeholder
+               span Date placeholder
+
+  .row(data-aos='fade-up', data-aos-delay='400')
+    .col-md-8.ml-auto
+      a.animsition-link(href='blog.html') Read All Blog Posts 
+a.templateux-section.templateux-cta.animsition-link.mt-5(href='contact.html', data-aos='fade-up')
+.container-fluid
+  .cta-inner
+    h2
+      span.words-1 Sign up to stay up-to-date.
+
+
+
+  footer.templateux-footer
+    .container-fluid
+      .row
+        .col-md-6.text-md-left.text-center
+          p
+
+
+            | Copyright &copy;
+            script.
+              document.write(new Date().getFullYear());
+            |  All rights reserved | This template is made with 
+            i.fa.fa-heart(aria-hidden='true')
+            |  by 
+            a.text-primary(href='https://colorlib.com', target='_blank') Colorlib
+
+
+
+        .col-md-6.text-md-right.text-center.footer-social
+          a.p-3(href='#')
+            span.icon-facebook2
+          a.p-3(href='#')
+            span.icon-twitter2
+          a.p-3(href='#')
+            span.icon-dribbble2
+          a.p-3(href='#')
+            span.icon-instagram
+script(src='js/strategy/js/scripts-all.js')
+script(src='js/strategy/js/main.js')
