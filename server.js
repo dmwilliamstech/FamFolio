@@ -33,14 +33,6 @@ app.get('/profile', (req, res)=> {
          });
 
     });
-    app.get('/critique', (req, res)=> {
-        //const person = people.profiles.find(p => p.id === req.query.id);
-        res.render('critique', {
-            title: `Critique`,
-//            person,
-         });
-
-    });
 const server = app.listen(process.env.PORT || 7000, () =>{
     console.log(`Express running -> PORT ${server.address().port}`);
 });
